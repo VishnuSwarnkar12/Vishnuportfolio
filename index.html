@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishnu Swarnkar Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 255, 255, 0.2));
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      color: #ffcc00;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .hero img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00ffff;
+      margin-top: 1rem;
+    }
+
+    .intro {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      margin: 2rem auto;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      color: #00ffff;
+    }
+
+    .intro ul {
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    .intro li {
+      margin: 0.5rem 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1rem;
+      text-align: center;
+      width: 120px;
+      backdrop-filter: blur(5px);
+      transition: 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    .skill-card img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .education {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .contact {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      text-align: center;
+      border-top: 2px solid #00ffff;
+    }
+
+    .contact p {
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        align-items: center;
+        clip-path: none;
+        text-align: center;
+      }
+    }
+
+    .floating-object {
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle, #00ffff 0%, #0066cc 70%);
+      border-radius: 50%;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 0 20px #00ffffaa, 0 0 40px #00ffff55;
+      z-index: 1000;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Vishnu Swarnkar</h1>
+      <p>⚡ Fast Learner | 💻 Programming Enthusiast | 🚀 Tech Explorer</p>
+    </div>
+    <img src="IMG_20250402_150528_253.jpg" alt="Vishnu Swarnkar's Photo" />
+  </section>
+
+  <section class="intro">
+    <h2>About Me</h2>
+    <ul>
+      <li>⚡ Quick to grasp new concepts</li>
+      <li>💡 Always learning new tech</li>
+      <li>🛠️ Building a strong base in programming</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <div class="skill-card">
+      <img src="https://img.icons8.com/color/96/html-5--v1.png" alt="HTML"/>
+      <p>HTML</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://img.icons8.com/color/96/css3.png" alt="CSS"/>
+      <p>CSS</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://img.icons8.com/color/96/python.png" alt="Python"/>
+      <p>Python</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://img.icons8.com/color/96/c-programming.png" alt="C"/>
+      <p>C</p>
+    </div>
+    <div class="skill-card">
+      <img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java"/>
+      <p>Java</p>
+    </div>
+  </section>
+
+  <section class="education">
+    <div style="background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(8px); border-radius: 20px; padding: 2rem; max-width: 800px; margin: 0 auto; box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);">
+      <h2 style="color: #00ffff; margin-bottom: 1rem;">🎓 Education</h2>
+      <p><strong>Institute:</strong> Government Polytechnic Kanpur</p>
+      <p><strong>Course:</strong> Diploma in Information Technology (3-Year Programme)</p>
+      <p><strong>Status:</strong> Currently in 2nd Year</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>📬 Contact Me</h2>
+    <p><strong>Email:</strong> vishnuswarnkar78@gmail.com</p>
+    <p><strong>Phone:</strong> 8299828601</p>
+    <p><strong>GitHub:</strong> [Add Link Here]</p>
+    <p><strong>👁️ Views:</strong> <span id="viewCount">0</span></p>
+  </section>
+
+  <div class="floating-object"></div>
+
+  <script>
+    const viewKey = 'vishnu-portfolio-views';
+    let views = localStorage.getItem(viewKey);
+    if (!views) {
+      views = 1;
+    } else {
+      views = parseInt(views) + 1;
+    }
+    localStorage.setItem(viewKey, views);
+    document.getElementById('viewCount').textContent = views;
+  </script>
+
+</body>
+</html>
